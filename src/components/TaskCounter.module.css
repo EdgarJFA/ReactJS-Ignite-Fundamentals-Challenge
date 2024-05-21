@@ -1,0 +1,27 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.counter strong {
+    color: var(--blue);
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.counter + .counter strong {
+    color: var(--purple);
+}
+
+.counter span {
+    background: var(--gray-400);
+    padding: 0.5rem;
+    color: var(--gray-200);
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 0.25rem;
+    border-radius: 999px;
+}
