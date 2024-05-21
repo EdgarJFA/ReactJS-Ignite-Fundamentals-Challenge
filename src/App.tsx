@@ -9,11 +9,7 @@ import { Task, SingleTaskType } from './components/Task'
 
 function App() {
   
-  const [tasks, setTasks] = useState<SingleTaskType[]>([{
-    id: uuidv4(),
-    title: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
-    isCompleted: false,
-  }])
+  const [tasks, setTasks] = useState<SingleTaskType[]>([])
 
   const [totalTasks, setTotalTasks] = useState(tasks.length)
   const [completedTasks, setCompletedTasks] = useState(tasks.filter(task => task.isCompleted).length)
